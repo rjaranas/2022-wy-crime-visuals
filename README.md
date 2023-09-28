@@ -1,2 +1,2 @@
-# 2022-wy-crime-visuals
+# d3 Visualisation of crimes reported in West Yorkshire during 2022
 Visualisation of the amount of crimes that was reported by West Yorkshire Police througout the year of 2022 and most common crime commited.
