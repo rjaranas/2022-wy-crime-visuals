@@ -1,0 +1,59 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    font-size: 1.1em;
+    font-family: 'Gabarito', cursive;
+}
+
+.page-wrapper {
+    margin:auto;
+    padding: 20px;
+    margin-top: 5em;
+    background-color: rgba(161, 202, 236, 0.664);
+    height: 100%;
+    width: 90%;
+    z-index: 0;
+}
+
+.title-container {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+.container {
+    margin:0 auto;
+}
+
+.summary {
+    position: relative;
+
+}
+
+table {
+  position: absolute;
+  top: -350px;  
+  left: 250px;
+  background-color: rgba(161, 202, 236, 0.801);
+}
+
+
+.tooltip {
+    position:absolute;
+    z-index: 30;
+    color: #000;
+    background-color:aliceblue;
+    padding: 1em;
+    font-size: 2em;
+}
+
+a {
+    color:brown;
+    text-decoration: none;
+
+}
