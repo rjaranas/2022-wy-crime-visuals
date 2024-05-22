@@ -1,25 +1,39 @@
-html, body {
+html {
     width: 100%;
     height: 100%;
     background-color: black;
     font-size: 1.1em;
     font-family: 'Gabarito', cursive;
+    overflow: auto;
+}
+
+body {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .page-wrapper {
-    margin:auto;
-    padding: 20px;
-    margin-top: 5em;
-    background-color: rgba(161, 202, 236, 0.664);
-    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: rgba(243, 242, 223, 0.856);
     width: 90%;
     z-index: 0;
 }
 
+
+
 .title-container {
+    display: flex;
     margin: 0 auto;
     text-align: center;
     font-size: 1.2em;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 h1 {
@@ -30,16 +44,11 @@ h1 {
     margin:0 auto;
 }
 
-.summary {
-    position: relative;
-
-}
 
 table {
-  position: absolute;
-  top: -350px;  
-  left: 250px;
-  background-color: rgba(161, 202, 236, 0.801);
+    background-color: rgba(243, 242, 223, 0.856);
+    width: 250px;
+    height: auto;
 }
 
 
@@ -50,10 +59,19 @@ table {
     background-color:aliceblue;
     padding: 1em;
     font-size: 2em;
+    margin: 0 auto;
 }
 
 a {
     color:brown;
     text-decoration: none;
 
+}
+
+.result-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
 }

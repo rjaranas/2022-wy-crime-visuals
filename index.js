@@ -6,7 +6,6 @@ const dataPromise = d3.json('json/2022-west-yorkshire.json')
 
 function drawData(dataset) {
     
-
     const width = 600;
     const height = 600;
 
@@ -14,17 +13,19 @@ function drawData(dataset) {
     .append('div')
     .attr('class', 'tooltip')
     .style('opacity', '0')
+    .attr('display', 'flex')
 
     const svg = d3.select('.container')
     .append('svg')
-    .attr('width', width  + 700)
+    .attr('width', width  + 300)
     .attr('height', height + 40)
     .attr('viewBox', [0, 0, width, height])
-    .attr('transform', `translate(450, 150)`)
+
+
 
 
     const groupCell = svg.append('g')
-    .attr('transform', `translate(40,0)`)
+
 
     const moreCrimes = d3.rollup(dataset, (v) => v.length, (d) => d['Crime type'])
     const uniqueCrimes = Array.from(moreCrimes.keys())
@@ -107,6 +108,7 @@ function drawData(dataset) {
     .attr('class', 'table')
     .style('border-collapse', 'collapse')
     .style('border', '2px black solid')
+    .style('margin', '0 auto')
 
     
 
@@ -118,8 +120,9 @@ function drawData(dataset) {
     .append('th')
     .text((d) => d)
     .style('padding', '5px')
-    .style('border', '3px solid black')
+    .style('border', '2px solid black')
     .style('font-size', '20px')
+    
 
 
     const tbody = table.append('tbody')
@@ -133,7 +136,7 @@ function drawData(dataset) {
     .style('padding', '5px')
     .style('border', '1px solid black')
     .style('font-size', '15px')
-
+    
     rows.append('td')
     .text((d) => d.Count)
     .style('padding', '5px')
